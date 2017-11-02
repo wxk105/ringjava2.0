@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication
 @EnableWebMvc
-public class DemoApplication  {
+public class RingApplication {
 
 	@Bean
 	public FilterRegistrationBean jwtFilter() {
@@ -23,6 +23,6 @@ public class DemoApplication  {
 
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(RingApplication.class, args);
 	}
 }

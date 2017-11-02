@@ -1,5 +1,6 @@
 package com.jumu.ring.dao;
 
+import com.jumu.ring.entity.CompanyName;
 import com.jumu.ring.entity.MobileCrbt;
 import org.springframework.data.repository.CrudRepository;
 
@@ -8,4 +9,5 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface MobileCrbtDao  extends CrudRepository<MobileCrbt,Long> {
 
+    MobileCrbt findByCompanyName(String companyName);
 }

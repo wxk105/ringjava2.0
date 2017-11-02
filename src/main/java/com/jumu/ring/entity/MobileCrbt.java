@@ -29,6 +29,15 @@ public class MobileCrbt {
     private String price3; //价格3
 
     private String playUrl; //播放url
+    private String companyName;//品牌名字
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
 
     public long getId() {
         return id;
